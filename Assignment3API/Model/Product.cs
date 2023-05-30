@@ -8,7 +8,7 @@ namespace Assignment3API.Model
         public string Name { get; set; }
         public decimal Price { get; set; }
         public string Description { get; set; }
-       
+
         public int BrandId { get; set; }
         public string BrandName { get; set; } // Add this property
         [JsonIgnore]

@@ -68,7 +68,7 @@ namespace Assignment3API.Controllers
         }
 
         // POST: api/Products
-        [HttpPost]
+        [HttpPost, DisableRequestSizeLimit]
         public async Task<ActionResult<Product>> PostProduct(Product product)
         {
             _context.Products.Add(product);
